@@ -1,0 +1,12 @@
+<%= form_for @promise do |f| %>
+  <%= f.label :promise_maker_name %>:
+  <%= f.text_field :maker_name, autofocus: true, placeholder: "Update name" %>
+
+  <%= f.label :the_promise %>:
+  <%= f.text_field :content, placeholder: "Update the promise" %>
+
+  <%= f.label :status %>:
+  <%= f.select :status, options_for_select(["in progress", "abandoned", "done"], :selected => @promise.status) %>
+
+  <%= f.submit %>
+<% end %>

@@ -1,14 +1,21 @@
 <h1>Promises Promises</h1>
-<div class='promises-container'>
-      <p class='promise-col-label'>Promise Maker:</p>
-      <p class='promise-col-label'>Promise:</p>
-      <p class='promise-col-label'>Status:</p>
-  <% @promises.each do |promise| %>
-      <p><%= promise.maker_name %></p>
-      <p><%= promise.content %></p>
-      <p><%= promise.status %></p>
-  <% end %>
+
+<div class='grid-container promise-col-label'>
+  <p>Promise Maker:</p>
+  <p>Promise:</p>
+  <p>Status:</p>
+  <p>Update:</p>
 </div>
-<div>
+
+<% @promises.each do |promise| %>
+  <div class='grid-container' id='promise-<%=promise.id%>'>
+    <p><%= promise.maker_name %></p>
+    <p><%= promise.content %></p>
+    <p><%= promise.status %></p>
+    <%= link_to "Update Promise", edit_promise_path(promise)%>
+  </div>
+<% end %>
+
+<div class='add-promise-link-container'>
   <%= link_to "Add Promise", new_promise_path %>
 </div>
