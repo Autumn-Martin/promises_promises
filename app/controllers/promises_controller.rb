@@ -1,4 +1,5 @@
 class PromisesController < ApplicationController
   def index
-  end 
+    @promises = Promise.all
+  end
 end
