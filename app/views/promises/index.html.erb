@@ -1,7 +1,11 @@
-<%= @promises.each do |promise| %>
-  <ul>
-    <li>promise.maker_name</li>
-    <li>promise.content</li>
-    <li>promise.status</li>
-  </ul>
-<% end %>
+<h1>Promises Promises</h1>
+<ul class='promises-container'>
+      <li>Promise Maker:</li>
+      <li>Promise:</li>
+      <li>Status:</li>
+  <% @promises.each do |promise| %>
+      <li><%= promise.maker_name %></li>
+      <li><%= promise.content %></li>
+      <li><%= promise.status %></li>
+  <% end %>
+</ul>
