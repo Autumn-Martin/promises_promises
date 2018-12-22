@@ -1,10 +1,9 @@
-<form>
   <%= form_for @promise do |f| %>
     <%= f.label :promise_maker_name %>:
     <%= f.text_field :maker_name, autofocus: true, placeholder: "Enter name" %>
 
     <%= f.label :the_promise %>:
     <%= f.text_field :content, placeholder: "Enter the promise" %>
+
     <%= f.submit %>
   <% end %>
-</form>
