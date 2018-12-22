@@ -9,7 +9,13 @@ class PromisesController < ApplicationController
 
   def create
     @promise = Promise.create(promise_params)
-    redirect_to promises_path
+    if @promise.save
+      redirect_to promises_path
+    else
+      flash.now.alert = 'Something went wrong.
+        Please make sure you are completing all fields.'
+      render :new
+    end
   end
 
   private
