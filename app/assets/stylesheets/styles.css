@@ -11,12 +11,20 @@ h1 {
 p {
   padding: 5px;
 }
+a {
+  color: lightseagreen
+}
 
-.promises-container {
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr
+  grid-template-columns: 1fr 3fr 1fr 1fr;
 }
 .promise-col-label {
   color: darkcyan;
   border-bottom: 2px solid darkcyan;
+}
+.add-promise-link-container {
+  text-align: center;
+  padding: 2%;
+  margin-top: 2%;
 }
