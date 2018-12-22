@@ -1,4 +1,22 @@
+body {
+  margin: 0% 10%;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  color: lightseagreen
+}
+p {
+  padding: 5px;
+}
+
 .promises-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr
+}
+.promise-col-label {
+  color: darkcyan;
+  border-bottom: 2px solid darkcyan;
 }
