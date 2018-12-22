@@ -6,7 +6,7 @@ describe 'new promise page' do
     click_on "Add Promise"
 
     expect(current_path).to eq(new_promise_path)
-    expect(page).to have_content("Promise Maker Name:")
-    expect(page).to have_content("The Promise:")
+    expect(page).to have_content("Promise maker name:")
+    expect(page).to have_content("The promise:")
   end
 end

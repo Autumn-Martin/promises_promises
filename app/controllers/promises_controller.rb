@@ -5,6 +5,6 @@ class PromisesController < ApplicationController
 
 
   def new
-    @promises = Promise.new
+    @promise = Promise.new
   end
 end
