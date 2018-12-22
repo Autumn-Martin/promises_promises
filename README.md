@@ -1,24 +1,29 @@
-# README
+# Promises Promises
+Module 4 | Contributors: Autumn Martin
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+### Intro
+Promises Promises is a Rails app that keeps track of all of the promises that others have made you. It includes full CRUD functionality, giving you the power to create, read, update, or delete these promises.
 
-Things you may want to cover:
+### Background
+The goal of this app was to refresh Ruby and Rails knowledge & to practice take home challenges.
 
-* Ruby version
+### Iterations
+Iteration 1: Create a Rails app to track promises that people make you. It should have full CRUD functionality for promises. These are not to be confused with JavaScript promises😉
 
-* System dependencies
+Iteration 2: Each promise should have a default status of `in progress`, but should be able to be updated to `abandoned` or `done`.
 
-* Configuration
+Tech Stack: Ruby 2.5.1, Rails 5.2.1, PostgreSQL, RSpec
 
-* Database creation
+## Getting started
+To set up this app locally in production, run:
+```
+rake db:create
+rake db:migrate
+rake db:seed
+```
 
-* Database initialization
+Then start the server via, `rails s`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Testing
+Run `rspec`
