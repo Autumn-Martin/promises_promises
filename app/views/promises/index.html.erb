@@ -13,6 +13,7 @@
     <p><%= promise.content %></p>
     <p><%= promise.status %></p>
     <%= link_to "Update Promise", edit_promise_path(promise)%>
+    <%= link_to "Delete Promise", promise_path(promise), method: :delete%>
   </div>
 <% end %>
 

@@ -1,5 +1,5 @@
 class PromisesController < ApplicationController
-  before_action :set_promise, only: [:edit, :update]
+  before_action :set_promise, only: [:edit, :update, :destroy]
 
   def index
     @promises = Promise.all
@@ -25,6 +25,11 @@ class PromisesController < ApplicationController
 
   def update
     @promise.update(promise_params)
+    redirect_to promises_path
+  end
+
+  def destroy
+    @promise.destroy
     redirect_to promises_path
   end
 
