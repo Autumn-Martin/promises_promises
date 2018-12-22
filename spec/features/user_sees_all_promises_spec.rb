@@ -9,9 +9,9 @@ describe 'promise index page' do
                                maker_name: "Mabel")
     promise_3 = Promise.create(content: "Pay back $5",
                                maker_name: "Grunkle Stan")
-    promise_3 = Promise.create(content: "Become a hero",
+    promise_4 = Promise.create(content: "Become a hero",
                                maker_name: "Soos")
-    promise_3 = Promise.create(content: "Be cool and save the day",
+    promise_5 = Promise.create(content: "Be cool and save the day",
                                maker_name: "Wendy")
 
     visit promises_path
