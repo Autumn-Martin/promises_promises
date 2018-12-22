@@ -1,8 +1,11 @@
 class PromisesController < ApplicationController
-  before_action :set_promise, only: [:edit, :update, :destroy]
+  before_action :set_promise, only: [:edit, :update, :destroy, :show]
 
   def index
     @promises = Promise.all
+  end
+
+  def show
   end
 
   def new

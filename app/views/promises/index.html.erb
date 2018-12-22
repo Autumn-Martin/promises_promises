@@ -1,5 +1,3 @@
-<h1>Promises Promises</h1>
-
 <div class='grid-container promise-col-label'>
   <p>Promise Maker:</p>
   <p>Promise:</p>
@@ -11,7 +9,7 @@
 <% @promises.each do |promise| %>
   <div class='grid-container' id='promise-<%=promise.id%>'>
     <p><%= promise.maker_name %></p>
-    <p><%= promise.content %></p>
+    <p><%= link_to promise.content, promise_path(promise) %></p>
     <p><%= promise.status %></p>
     <%= link_to "Update Promise", edit_promise_path(promise)%>
     <%= link_to "Delete Promise", promise_path(promise), method: :delete%>
